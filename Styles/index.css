@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto&family=Varela+Round&display=swap');
+
 :root {
     --nav_color: #434141;
     --section_color: #2c2a2a;
     --primary: #37bcae;
-    --text-color: #e7e7e7;
+    --text_color: #e7e7e7;
+    --list_color: #4e4b4b;
 }
 
 html {
@@ -12,7 +15,9 @@ html {
 body {
     padding: 0%;
     margin: 0%;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     display: flex;
 }
 
@@ -30,7 +35,6 @@ nav {
 }
 
 #profile_container { /* Profile Container Styling */
-    background-color: var(--primary);
     width: 100%;
     aspect-ratio: 1/1.75;
     display: flex;
@@ -54,11 +58,11 @@ nav {
     aspect-ratio: 1/1;
     border-radius: 50%;
     outline: none;
-    border: 7.5px solid var(--text-color);
+    border: 7.5px solid var(--primary);
 }
 
 #name_and_profession {
-    color: var(--text-color);
+    color: var(--text_color);
     white-space: nowrap;
     overflow: hidden;
     text-align: center;
@@ -66,7 +70,12 @@ nav {
     cursor: default;
 }
 
+#name_and_profession h2 {
+    font-size: 1.75rem;
+}
+
 #name_and_profession h3 {
+    font-size: 1.05rem;
     translate: 0 -0.75rem;
 }
 
@@ -99,7 +108,7 @@ nav {
 
 #nav_items li a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text_color);
     font-weight: 600;
     width: 100%;
     height: 100%;

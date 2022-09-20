@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto&family=Varela+Round&display=swap');
+
+:root {
+    --nav_color: #434141;
+    --section_color: #2c2a2a;
+    --primary: #37bcae;
+    --text_color: #e7e7e7;
+    --list_color: #4e4b4b;
+
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.home_intro_wrapper {
+    width: 75%;
+    text-align: left;
+}
+
+.home_intro_wrapper h2 {
+    font-size: 2rem;
+}
+
+.home_intro_wrapper h1 {
+    font-size: 2.5rem;
+    translate: 0 -1.75rem;
+}
+
+.home_intro_wrapper h1 span {
+    color: var(--primary);
+}
+
+.home_intro_wrapper p {
+    translate: 0 -2.75rem;
+}
+
+.home_intro_wrapper .about_button {
+    border: none;
+    outline: none;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 500px;
+    translate: 0 -2.5rem;
+    background-color: var(--list_color);
+    transition: all 0.3s ease-out;
+}
+
+.about_button a {
+    text-decoration: none;
+    color: var(--text_color);
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_button:hover {
+    background-color: var(--primary);
+}
