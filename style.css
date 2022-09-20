@@ -1,0 +1,128 @@
+:root {
+    --nav_color: #434141;
+    --section_color: #2c2a2a;
+    --primary: #37bcae;
+    --text-color: #e7e7e7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+    display: flex;
+}
+
+/* Navigation bar design */
+
+nav {
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: var(--nav_color);
+    width: 25rem;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile_container { /* Profile Container Styling */
+    background-color: var(--primary);
+    width: 100%;
+    aspect-ratio: 1/1.75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1rem;
+}
+
+.my_pic {
+    background-color: var(--nav_color);
+    width: 10rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    outline: none;
+    border: 7.5px solid var(--text-color);
+}
+
+#name_and_profession {
+    color: var(--text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+
+#name_and_profession h3 {
+    translate: 0 -0.75rem;
+}
+
+#nav_items { /* nav list styling */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#nav_items li {
+    list-style: none;
+    background-color: #4e4b4b;
+    width: 80%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    border-radius: 500px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-out;
+}
+
+#nav_items li:hover {
+    background-color: var(--primary);
+}
+
+#nav_items li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section Styling */
+
+#section_container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 40, 40);
+    color: white;
+    font-size: 7.5vw;
+    font-weight: 600;
+}
