@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto&family=Varela+Round&display=swap');
+
+:root {
+    --nav_color: #434141;
+    --section_color: #2c2a2a;
+    --primary: #37bcae;
+    --text_color: #e1dfdf;
+    --list_color: #4e4b4b;
+}
+
+.education_wrapper {
+    width: 90%;
+    min-height: 100vh;
+}
+
+.education_wrapper h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--list_color);
+    width: 100%;
+    height: 7.5%;
+    color: var(--text_color);
+}
+
+.education_wrapper h1 span {
+    color: var(--primary);
+}
+
+/* Qualifications Div Styling */
+
+.qualifications {
+    width: 100%;
+    min-height: 25vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/* Qualification styling */
+
+.qualification {
+    all: initial;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    position: relative;
+    width: 18rem;
+    aspect-ratio: 1/0.7;
+    display: flex;
+    margin-top: 2.5%;
+    color: var(--text_color);
+}
+
+.pole_wrapper {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.graduate_hat_wrapper {
+    background-color: var(--primary);
+    color: var(--text_color);
+    width: 75%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.pole {
+    position: absolute;
+    top: 0%;
+    width: 0.75%;
+    height: 100%;
+    background-color: white;
+    border-radius: 700px;
+}
+
+/* Education details Styling */
+
+.education_details {
+    width: 100%;
+}
+
+.year {
+    color: var(--text_color);
+    background-color: var(--list_color);
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 700px;
+    position: relative;
+    top: 0.5rem;
+}
+
+.education_details h2 {
+    font-size: 1.25rem;
+}
