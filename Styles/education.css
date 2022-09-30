@@ -96,3 +96,15 @@
 .education_details h2 {
     font-size: 1.25rem;
 }
+
+.education_details p span {
+    color: var(--primary);
+}
+
+@media (max-width: 460px) {
+    
+    .qualification {
+        width: 20rem;
+    }
+
+}

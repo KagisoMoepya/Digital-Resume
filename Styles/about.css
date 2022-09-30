@@ -101,6 +101,29 @@
 
     .badge {
         width: 15rem;
+        transition: all 0.2s ease-out ;
     }
+}
+
+@media (max-width: 460px) {
+
+    .about_content_wrappers {
+        width: 90%;
+    }
+
+    .badge_details {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .badge {
+        width: 90%;
+    }
+
+    .badge h1 {
+        font-size: 2rem;
+    }
+
 }
 
