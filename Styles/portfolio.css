@@ -11,7 +11,7 @@
     min-height: 100vh;
 }
 
-.portfolio_wrapper h1 {
+.portfolio_wrapper .heading {
     font-size: 2.5rem;
     text-align: center;
     border-bottom: 2px solid var(--list_color);
@@ -20,7 +20,7 @@
     color: var(--text_color);
 }
 
-.portfolio_wrapper h1 span {
+.portfolio_wrapper .heading span {
     color: var(--primary);
 }
 
@@ -58,6 +58,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: var(--text_color);
     font-size: 1.75rem;
     transition: letter-spacing 0.3s ease-out;

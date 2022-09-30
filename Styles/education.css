@@ -5,7 +5,7 @@
     min-height: 100vh;
 }
 
-.education_wrapper h1 {
+.education_wrapper .heading {
     font-size: 2.5rem;
     text-align: center;
     border-bottom: 2px solid var(--list_color);
@@ -14,7 +14,7 @@
     color: var(--text_color);
 }
 
-.education_wrapper h1 span {
+.education_wrapper .heading span {
     color: var(--primary);
 }
 

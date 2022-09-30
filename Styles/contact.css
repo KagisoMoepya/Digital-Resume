@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto&family=Varela+Round&display=swap');
+
 :root {
     --nav_color: #434141;
     --section_color: #2c2a2a;
@@ -11,7 +13,7 @@
     min-height: 100vh;
 }
 
-.contact_wrapper h1 {
+.contact_wrapper .heading {
     font-size: 2.5rem;
     text-align: center;
     border-bottom: 2px solid var(--list_color);
@@ -20,7 +22,7 @@
     color: var(--text_color);
 }
 
-.contact_wrapper h1 span {
+.contact_wrapper .heading span {
     color: var(--primary);
 }
 
@@ -28,8 +30,187 @@
 
 .contact_content {
     width: 100%;
-    min-height: 80vh;
+    min-height: 85vh;
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
 }
+
+.contact_common_wrappers {
+    flex: 1;
+}
+
+.contact_form_wrapper {
+    margin-top: 2.5%;
+}
+
+/* Contact Information Styling */
+
+.contact_info_wrapper {
+    display: flex;
+    align-items: center;
+    color: var(--text_color);
+}
+
+.contact_info_wrapper h1 {
+    font-size: 1.75rem;
+}
+
+.contact_info_wrapper p {
+    font-size: 1rem;
+}
+
+.contact_info_wrapper p span {
+    translate: 0 0.25rem;
+    color: var(--primary);
+}
+
+.centered_info_wrapper {
+    width: 25rem;
+}
+
+/* Form Styling */
+
+.contact_form_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_form_wrapper form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_wrapper {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input_wrapper input {
+    margin: auto;
+    width: 85%;
+    height: 2.5rem;
+    border-radius: 700px;
+    padding-left: 25px;
+    border: 2px solid var(--list_color);
+    color: var(--text_color);
+    background-color: transparent;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    transition: border 0.3s ease-out;
+}
+
+.input_wrapper label {
+    position: relative;
+    left: 10%;
+    bottom: 2rem;
+    width: fit-content;
+    font-size: 1rem;
+    padding: 0 10px 0 10px;
+    color: var(--list_color);
+    cursor: text;
+    background-color: var(--section_color);
+    border-radius: 700px;
+    transition: all 0.2s ease-out;
+}
+
+.input_wrapper input:focus {
+    border: 2px solid var(--primary);
+}
+
+.input_wrapper input:focus ~ label {
+    color: var(--text_color);
+    bottom: 3.5rem;
+}
+
+.input_wrapper input:focus ~ label, 
+.input_wrapper input:valid ~ label {
+    color: var(--text_color);
+    bottom: 3.5rem;
+}
+
+.textarea_wrapper textarea {
+    width: 87.5%;
+    padding: 5% 0 0 3%;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid var(--list_color);
+    outline: none;
+    resize: none;
+    color: var(--text_color);
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    transition: border 0.3s ease-out;
+}
+
+.textarea_wrapper label {
+    bottom: 10rem;
+}
+
+.textarea_wrapper textarea:focus {
+    border: 2px solid var(--primary);
+}
+
+.textarea_wrapper textarea:focus ~ label {
+    color: var(--text_color);
+    bottom: 12rem;
+}
+
+.textarea_wrapper textarea:focus ~ label,
+.textarea_wrapper textarea:valid ~ label {
+    color: var(--text_color);
+    bottom: 12rem;
+}
+
+button[type=submit] {
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 700px;
+    outline: none;
+    border: none;
+    background-color: var(--list_color);
+    color: var(--text_color);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 2%;
+    transition: all 0.2s ease-out;
+}
+
+button[type=submit] span {
+    padding-left: 2.5%;
+}
+
+button[type=submit]:hover {
+    background-color: var(--primary);
+}
+
+@media (max-width: 460px) {
+    
+    .contact_info_wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centered_info_wrapper {
+        margin: 0 0 0 5%;
+    }
+
+    .contact_form_wrapper {
+        margin-top: 2%;
+    }
+
+}
+ 
