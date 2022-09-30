@@ -40,7 +40,7 @@
 }
 
 .contact_form_wrapper {
-    margin-top: 2.5%;
+    margin-top: 4%;
 }
 
 /* Contact Information Styling */
@@ -198,6 +198,7 @@ button[type=submit]:hover {
 }
 
 @media (max-width: 460px) {
+
     
     .contact_info_wrapper {
         justify-content: center;
@@ -205,11 +206,12 @@ button[type=submit]:hover {
     }
 
     .centered_info_wrapper {
+        width: 20rem;
         margin: 0 0 0 5%;
     }
 
-    .contact_form_wrapper {
-        margin-top: 2%;
+    .input_wrapper {
+        width: 20rem;
     }
 
 }
