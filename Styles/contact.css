@@ -185,7 +185,7 @@ button[type=submit] {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin-bottom: 2%;
+    margin: 2% 0% 2% 0%;
     transition: all 0.2s ease-out;
 }
 
@@ -197,9 +197,17 @@ button[type=submit]:hover {
     background-color: var(--primary);
 }
 
+.input_wrapper:last-child {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 23rem;
+}
+
+
+
 @media (max-width: 460px) {
 
-    
     .contact_info_wrapper {
         justify-content: center;
         align-items: center;
@@ -212,6 +220,10 @@ button[type=submit]:hover {
 
     .input_wrapper {
         width: 20rem;
+    }
+
+    .input_wrapper:last-child {
+        width: 18rem;
     }
 
 }
