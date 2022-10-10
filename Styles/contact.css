@@ -163,13 +163,13 @@
 
 .textarea_wrapper textarea:focus ~ label {
     color: var(--text_color);
-    bottom: 12rem;
+    bottom: 95%;
 }
 
 .textarea_wrapper textarea:focus ~ label,
 .textarea_wrapper textarea:valid ~ label {
     color: var(--text_color);
-    bottom: 12rem;
+    bottom: 95%;
 }
 
 button[type=submit] {
@@ -185,7 +185,7 @@ button[type=submit] {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin: 2% 0% 2% 0%;
+    margin: 2% 0% 10% 0%;
     transition: all 0.2s ease-out;
 }
 

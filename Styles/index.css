@@ -68,7 +68,7 @@ nav {
 
 #profile_container { /* Profile Container Styling */
     width: 100%;
-    aspect-ratio: 1/1.75;
+    aspect-ratio: 1/1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +86,7 @@ nav {
 
 .my_pic {
     background-color: var(--nav_color);
-    width: 10rem;
+    width: 40%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     outline: none;
@@ -124,7 +124,7 @@ nav {
     list-style: none;
     background-color: #4e4b4b;
     width: 80%;
-    height: 15%;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
