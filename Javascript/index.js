@@ -35,3 +35,32 @@ menu.addEventListener('click', (e) => {
         navigation_bar.style.left = '-100%'
     }
 })
+
+
+/**
+ * Form submission event handler
+ */
+
+const form = document.querySelector('form')
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+
+    const formData = new FormData(form)
+    const name = formData.get('name')
+    const email = formData.get('email')
+    const company_name = formData.get('company_name')
+    const message = formData.get('message')
+
+    console.log({name, email, company_name, message});
+
+    Email.send({
+        SecureToken : "4d6423b3-0387-4d73-ada1-e21b52dbd2c4",
+        To : 'kagisomoepya19@gmail.com',
+        From : email,
+        Subject : company_name,
+        Body : message
+    }).then(
+      message => alert(message)
+    )
+})

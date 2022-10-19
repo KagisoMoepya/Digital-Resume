@@ -43,15 +43,22 @@
 .download_cv_btn {
     color: var(--text_color);
     background-color: var(--list_color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 10rem;
     height: 2.5rem;
     font-size: 1rem;
     border-radius: 30px;
     cursor: pointer;
     transition: all 0.3s ease-out;
+}
+
+.download_cv_btn a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text_color);
 }
 
 .download_cv_btn:hover {
