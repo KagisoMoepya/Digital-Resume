@@ -68,6 +68,26 @@
     width: 25rem;
 }
 
+.centered_info_wrapper p:nth-of-type(4),
+.centered_info_wrapper p:nth-of-type(5) {
+    margin-bottom: 1rem;
+}
+
+.centered_info_wrapper p:nth-of-type(4) span,
+.centered_info_wrapper p:nth-of-type(5) span {
+    position: relative;
+    left: 0.25rem;
+}
+
+.centered_info_wrapper p:nth-of-type(4) a,
+.centered_info_wrapper p:nth-of-type(5) a {
+    position: relative;
+    left: 0.5rem;
+    top: 0.25rem;
+    text-decoration: none;
+    color: var(--text_color);
+}
+
 /* Form Styling */
 
 .contact_form_wrapper {

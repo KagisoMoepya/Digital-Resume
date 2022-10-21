@@ -91,6 +91,7 @@
 .badge h1 {
     border: none;
     font-size: 1.25rem;
+    color: var(--primary);
 }
 
 @media (max-width: 800px) {

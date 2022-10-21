@@ -85,11 +85,16 @@ nav {
 }
 
 .my_pic {
-    background-color: var(--nav_color);
+    background-image: url(../Images/my_pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 40%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 7.5px solid var(--primary);
 }
 
