@@ -47,12 +47,11 @@
 }
 
 .project:nth-child(odd) {
-    background: linear-gradient(to bottom, red, orange, #baba18 , green, blue, Indigo, violet);
+    background: linear-gradient(to bottom,var(--primary), Indigo, violet);
 }
 
 .project:nth-child(even) {
-    background: linear-gradient(to top, red, orange, #baba18 , green, blue, Indigo, violet);
-
+    background: linear-gradient(to top, var(--primary), Indigo, violet);
 }
 
 .project a {

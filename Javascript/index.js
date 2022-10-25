@@ -36,7 +36,6 @@ menu.addEventListener('click', (e) => {
     }
 })
 
-
 /**
  * Form submission event handler
  */
@@ -54,13 +53,12 @@ form.addEventListener('submit', (e) => {
 
     console.log({name, email, company_name, message});
 
-    Email.send({
-        SecureToken : "4d6423b3-0387-4d73-ada1-e21b52dbd2c4",
-        To : 'kagisomoepya19@gmail.com',
-        From : email,
-        Subject : company_name,
-        Body : message
-    }).then(
-      message => alert(message)
+    emailjs.send("service_5ohexgr","template_q9tamd5",{
+        name: name,
+        email: email,
+        company_name: company_name,
+        message: message,
+    }).then(alert(`The Email was sent Successfully!`)
     )
+    form.reset()
 })
